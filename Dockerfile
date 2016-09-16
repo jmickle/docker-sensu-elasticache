@@ -7,6 +7,6 @@ RUN apt-get update && apt-get install -y sensu uchiwa
 COPY ./configs/uchiwa.json /etc/sensu/uchiwa.json
 COPY ./configs/sensu.conf /etc/supervisor/supervisord.conf
 
-EXPOSE 3000 4567 5671 15672
+EXPOSE 3000 4567
 
 CMD ["/usr/bin/supervisord"]
